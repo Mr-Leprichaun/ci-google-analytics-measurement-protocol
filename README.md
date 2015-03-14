@@ -1,5 +1,5 @@
-# ci-google-analytics-measurement-protocol
-Google Analytics Measurement Protocol Library for CodeIgniter
+## ci-google-analytics-measurement-protocol
+#Google Analytics Measurement Protocol Library for CodeIgniter
 
 This library allows you to send custom events and pageviews to Google Analytics Goals with a single function call.
 
@@ -9,12 +9,12 @@ Installation:
 
 Usage:
 1. Load the library
-  a. in system/config/autoload.php, add "'google_analytics'" to the $autoload['libraries'] array, or
-  b. in the file that you'd like to use this class, add "$this->load->library('google_analytics');"
+..a. in system/config/autoload.php, add "'google_analytics'" to the $autoload['libraries'] array, or
+..b. in the file that you'd like to use this class, add "$this->load->library('google_analytics');"
 2. Call the function to either send an 'event' or a 'pageview' to Google Analytics
-  a. For an event:
+..a. For an event:
     "$this->google_analytics->send_google_analytics_event('UA-XXXXXXXX-X', '{CATEGORY}', '{ACTION}', '[{LABEL}]', '[{VALUE}]');"
     i. LABEL and VALUE are optional
-  b. For a pageview:
+..b. For a pageview:
     "$this->google_analytics->send_google_analytics_pageview('UA-XXXXXXXX-X', '{HOST}', '{PATH}', '{TITLE}');"
     i. All parameters are required
