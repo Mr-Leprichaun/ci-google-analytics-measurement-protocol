@@ -4,11 +4,9 @@
 
 This library allows you to send custom events and pageviews to Google Analytics Goals with a single function call.
 
-
 Installation:
-1. Put Google_analytics.php into your application/libraries folder
-2. [Optional] Change "$this->user_agent = 'CI-GA-MP/1.0 '.site_url();" to any other user-agent you'd like your site to be
-
+1. Put `Google_analytics.php` into your `application/libraries` folder
+2. [Optional] Change `$this->user_agent = 'CI-GA-MP/1.0 '.site_url();` to any other user-agent you'd like your site to be
 
 Usage:
 
@@ -22,7 +20,7 @@ $this->google_analytics->send_google_analytics_event('UA-XXXXXXXX-X', '{CATEGORY
 ```
   * LABEL and VALUE are optional
     
-  2. For a pageview:
+  2. For a pageview
 ```PHP
 $this->google_analytics->send_google_analytics_pageview('UA-XXXXXXXX-X', '{HOST}', '{PATH}', '{TITLE}');
 ```    
